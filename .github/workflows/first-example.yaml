@@ -9,10 +9,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Welcome to GitHub Actions
-        run: echo "My first GitHub Actions job"
+        run: |
+         ls
+         ls -ltr
+         echo "welcome Narayan"
+         cat README.md  
 
-      - name: List files
-        run: ls
-
-      - name: Read file
-        run: cat README.md
+   
